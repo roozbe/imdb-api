@@ -40,23 +40,25 @@ The application processes the following IMDb dataset files:
 ## Setup Instructions
 
 ### Prerequisites
+- **PostgreSQL** installed.
 - **Java 17** installed.
 - **Maven** installed.
 
 ### Steps to Run the Application
 1. Download and save IMDb dataset files in C:\
-2. Clone the repository:
+2. Install PostgreSQL, create databse and user lobox identified by lobox with required privileges.
+3. Clone the repository:
    ```bash
    git clone <repository-url>
    cd imdb_rest_api
    ```
-3. Build the application:
+4. Build the application:
    ```bash
    mvn clean package
    ```
-4. Run the application:
+5. Run the application:
    ```bash
    java -jar target/imdb_rest_api-1.0.1.jar
    ```
-5. Access the API using browser at `http://localhost:8085/swagger-ui`.
+6. Access the API using browser at `http://localhost:8085/swagger-ui`.
 
